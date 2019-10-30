@@ -1,0 +1,1243 @@
+// $txt-color: #0064af;
+// $bg-color:#ffa826;
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+%clearfix {
+  zoom: 1;
+  &:after {
+      clear: both;
+  }
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+}
+input[type='text'],
+select {
+    border: none;
+    text-indent: 1em;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1100px;
+}
+/* 海峡网 头部导航 */
+.hxw-top-bar-wrap {
+  min-width: 1100px;
+  height: 36px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  z-index: 90000;
+}
+.hxw-top-bar-inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+}
+.hxw-nav {
+  overflow: visible;
+  float: left;
+}
+.hxw-nav-list {
+  height: 36px;
+  position: relative;
+  z-index: 2;
+  float: left;
+}
+.hxw-nav-list li {
+  float: left;
+  position: relative;
+}
+.hxw-nav a {
+  line-height: 36px;
+  display: block;
+  padding: 0 16px;
+  color: #666;
+  font-size: 14px;
+  _display: inline-block;
+  &:hover{
+    color: #fb8e0e;
+  }
+}
+.hxw-nav-list-first a {
+  padding-left: 0;
+}
+.hxw-more {
+  &.cur {
+      i {
+          background-position: -38px -232px;
+          transform: rotate(180deg);
+      }
+  }
+  i {
+      @extend %in-b;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: 10px;
+      height: 8px;
+      background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/sprite.png) -68px -234px;
+  }
+}
+.hxw-nav .cur,
+.hxw-client .cur {
+    height: 36px;
+    _height: 33px;
+    border-color: #c7c7c7;
+    color: #fb8e0e;
+    background: #fff;
+    box-shadow: 0 -1px 1px #c7c7c7;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+.hxw-nav-others {
+  border: 1px solid #c7c7c7;
+  box-shadow: 0 0 1px #c7c7c7;
+  background: #fff;
+  overflow: hidden;
+  zoom: 1;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 215px;
+  _width: 402px;
+  display: none;
+}
+.TAP14 {
+  float: right;
+  position: relative;
+  width: 150px;
+  height: 36px;
+  font-weight: normal;
+  font-size: 14px;
+  overflow: visible;
+  color: #333;
+}
+#logout_status{
+  @extend %clearfix;
+}
+.TAP14 .ac-rgst {
+  position: relative;
+  float: right;
+  width: 60px;
+  z-index: 3;
+}
+.TAP14 .ac-rgst .msg-link {
+  position: relative;
+  display: block;
+  width: 50px;
+  padding-left: 0;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 36px;
+  &:hover{
+    color: #fb8e0e;
+  }
+}
+.TAP14 .ac-login {
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 36px;
+  z-index: 1000;
+  overflow: visible;
+  line-height: 36px;
+}
+.TAP14 .ac-login .log-links {
+  float: left;
+  padding: 0 14px 0 0;
+  &:hover{
+    color: #fb8e0e;
+  }
+}
+.hxw-client {
+  position: relative;
+  float: right;
+  width: 116px;
+  font-size: 14px;
+  overflow: visible;
+}
+.hxw-client-tl {
+  position: relative;
+}
+.hxw-client-tl a {
+  line-height: 36px;
+  border-left: 1px solid #fbfbfb;
+  border-right: 1px solid #fbfbfb;
+  display: block;
+  padding: 0 0 0 15px;
+  _padding-top: 11px;
+  _padding-bottom: 11px;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+.hxw-yd {
+  i {
+      @extend %in-b;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: 10px;
+      height: 8px;
+      background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/sprite.png) -68px -234px;
+  }
+  &:hover {
+      i {
+          background-position: -38px -232px;
+          transform: rotate(180deg);
+      }
+  }
+}
+.hxw-dropdown {
+  border: 1px solid #c7c7c7;
+  box-shadow: 0 0 1px #c7c7c7;
+  background: #fff;
+  overflow: hidden;
+  zoom: 1;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  display: none;
+  padding: 10px;
+}
+.hx-btn-a {
+  @extend %in-b;
+  vertical-align: middle;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 4px;
+  margin-right: 5px;
+  &:hover,
+  &.active {
+      background-color: #ffa826;
+      border-radius: 4px;
+  }
+}
+.hx-head {
+  height: 90px;
+  background-color: #fff;
+  .hx-head-l {
+      float: left;
+      padding-top: 17px;
+      .hx-logo {
+          @extend %in-b;
+          height: 55px;
+          vertical-align: middle;
+          &:after {
+              content: '';
+              @extend %in-b;
+              width: 1px;
+              height: 26px;
+              border-right: dotted 1px #8d8d8d;
+              vertical-align: middle;
+          }
+          a {
+              @extend %in-b;
+              vertical-align: middle;
+          }
+          img {
+              height: 100%;
+              vertical-align: middle;
+              margin-right: 15px;
+          }
+      }
+      .hx-jg-logo {
+          @extend %in-b;
+          vertical-align: middle;
+          a {
+              display: block;
+              max-height: 55px;
+              max-width: 120px;
+              width: 100%;
+              height: 100%;
+          }
+          img {
+              height: 100%;
+              vertical-align: middle;
+          }
+      }
+      .hx-h1 {
+          @extend %in-b;
+          vertical-align: middle;
+          font-size: 22px;
+          color: #444;
+          margin-right: 20px;
+          margin-left: 14px;
+          font-weight: bold;
+      }
+      .hx-address {
+          @extend %in-b;
+          vertical-align: middle;
+          width: 94px;
+          cursor: pointer;
+          position: relative;
+          padding-bottom: 3px;
+          z-index: 1000;
+          .hx-act {
+              border: solid 1px transparent;
+              text-align: center;
+              span {
+                  @extend %in-b;
+                  height: 100%;
+                  color: #444;
+                  vertical-align: middle;
+                  padding: 0 4px;
+              }
+              .hx-address-icon-1 {
+                  @extend %in-b;
+                  vertical-align: middle;
+                  width: 10px;
+                  height: 13px;
+                  background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/sprite.png) -244px -149px;
+              }
+              .hx-address-icon-2 {
+                  @extend %in-b;
+                  vertical-align: middle;
+                  width: 10px;
+                  height: 6px;
+                  background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/sprite.png) -38px -234px;
+              }
+          }
+          .hx-city-box-wap {
+              display: none;
+          }
+          .hx-city-box {
+              display: none;
+              position: absolute;
+              left: 0;
+              top: 100%;
+              padding: 14px 20px;
+              min-width: 530px;
+              background-color: #ffffff;
+              border-radius: 3px;
+              border: solid 1px #dadada;
+              .hx-select {
+                  font-size: 16px;
+                  font-weight: bold;
+              }
+              .hx-area {
+                  margin: 10px 0 16px 0;
+              }
+              .hx-city {
+                  display: none;
+                  &.active {
+                      display: block;
+                  }
+                  a {
+                      margin: 0 5px;
+                      &:hover,
+                      &.active {
+                          color: #333;
+                      }
+                  }
+              }
+          }
+          .hx-area li,
+          .hx-city a {
+              @extend .hx-btn-a;
+          }
+          &:hover,
+          &.active {
+              .hx-act {
+                  background-color: #f5f5f5;
+                  border-color: #e6e6e6;
+              }
+              .hx-city-box {
+                  display: block;
+              }
+          }
+          &.active {
+              .hx-city-box-wap {
+                  display: none;
+              }
+          }
+      }
+      .hx-jg {
+          @extend %in-b;
+          vertical-align: middle;
+          .hx-h1 {
+              font-size: 18px;
+              margin-right: 14px;
+              margin-left: 0;
+          }
+      }
+  }
+  .hx-head-r {
+      float: right;
+      padding-top: 28px;
+      .hx-search {
+          @extend %in-b;
+          vertical-align: middle;
+          height: 38px;
+          margin-right: 45px;
+          input[type=text] {
+              float: left;
+              width: 290px;
+              height: 36px;
+              border: solid 1px #e6e6e6;
+          }
+          input[type=submit] {
+              float: left;
+              width: 50px;
+              height: 38px;
+              background-color: #ffa826;
+              border-radius: 2px;
+              color: #8c5a0e;
+          }
+      }
+      .hx-tel {
+          @extend %in-b;
+          vertical-align: middle;
+          font-size: 26px;
+          color: #fb8e0e;
+          background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/hx-tel.png) no-repeat left center;
+          padding-left: 32px;
+      }
+  }
+}
+.hx-nav {
+  background-color: #2f8cd7;
+  height: 40px;
+  .wrap {
+      position: relative;
+      z-index: 999;
+  }
+  .hx-nav-menu {
+      @extend %in-b;
+      vertical-align: middle;
+      li {
+          float: left;
+          height: 40px;
+          position: relative;
+          z-index: 100;
+          &:nth-last-child(1),
+          &:nth-last-child(2),
+          &:nth-last-child(3) {
+              .hx-l-2 {
+                  right: 0;
+              }
+          }
+          .hx-l-1 {
+              height: 100%;
+              font-size: 16px;
+              line-height: 40px;
+              color: #fff;
+              text-align: center;
+              display: block;
+              padding: 0 27px;
+          }
+          .hx-l-2 {
+              padding: 10px 20px;
+              width: 480px;
+              display: none;
+              position: absolute;
+              box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.19);
+              border-radius: 0px 0px 4px 4px;
+              background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/hx-nav.jpg) no-repeat center center;
+              background-size: 100% 100%;
+              .hx-l-con {
+                  &:nth-last-child(1) {
+                      .hx-lb-name {
+                          border: none;
+                      }
+                  }
+              }
+              .hx-l-con {
+                  @extend %clearfix;
+                  .hx-lb-txt {
+                      float: left;
+                      max-width: 8em;
+                      text-align: right;
+                      line-height: 23px;
+                      height: 23px;
+                      padding: 10px 0;
+                      @extend %one;
+                  }
+                  .hx-lb-name {
+                      padding-top: 10px;
+                      float: left;
+                      width: 366px;
+                      border-bottom: 1px solid #efefef;
+                      a {
+                          @extend .hx-btn-a;
+                          color: #666;
+                          margin-bottom: 10px;
+                      }
+                  }
+              }
+          }
+          &:hover {
+              .hx-l-1 {
+                  background-color: #1777c4;
+              }
+              .hx-l-2 {
+                  display: block;
+              }
+          }
+      }
+  }
+}
+.hx-jg-class {
+  cursor: pointer;
+  width: 152px;
+  height: 40px;
+  @extend %in-b;
+  vertical-align: middle;
+  &:hover {
+      background-color: #1777c4;
+      .hx-nav-menu {
+          display: block;
+      }
+  }
+  .hx-jg-all {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      span {
+          @extend %in-b;
+          height: 100%;
+          line-height: 40px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          padding-left: 30px;
+          background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/class.png) no-repeat left center;
+      }
+  }
+  .hx-nav-menu {
+      display: none;
+      width: 100%;
+      background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/m-1.png);
+      li {
+          float: none;
+          height: 36px;
+          &:hover {
+              .hx-l-1 {
+                  background-color: #f2f2f2;
+                  color: #444444;
+                  line-height: 36px;
+                  .icon-l {
+                      background-image: url(https://img.thea.cn/public/platform/thea/201905/hx/images/l.png);
+                  }
+              }
+          }
+          .hx-l-1 {
+              color: #fff;
+              padding: 0;
+              display: block;
+              span {
+                  @extend %in-b;
+                  width: 80px;
+                  text-align: left;
+                  height: 100%;
+                  line-height: 36px;
+                  position: relative;
+                  top: -1px;
+                  margin-left: 30px;
+              }
+              .icon-l {
+                  @extend %in-b;
+                  background: url(https://img.thea.cn/public/platform/thea/201905/hx/images/ll.png) no-repeat center;
+                  margin-right: 30px;
+                  width: 6px;
+                  height: 100%;
+                  position: relative;
+                  top: -3px;
+                  vertical-align: middle;
+              }
+          }
+          .hx-l-2 {
+              right: -520px !important;
+              top: 0;
+          }
+      }
+  }
+}
+#footer {
+  margin-top: 0;
+  background-color: #3f3f3f;
+  color: #cdcdcd;
+  padding: 20px 0;
+  &.footer-404 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+  p {
+      color: #cdcdcd;
+  }
+  .links {
+      a {
+          color: #cdcdcd;
+          &:hover {
+              color: #fb8e0e;
+          }
+      }
+  }
+}
+/* 胶东在线 */
+.jd-btn-a {
+  height: 40px;
+  line-height: 40px;
+  &:hover,
+  &.active {
+    border-radius: 4px;
+  }
+}
+.jd-top-bar-wrap {
+  min-width: 1200px;
+  height: 44px;
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 0 0 #dddddd;
+  position: relative;
+  overflow: visible;
+  z-index: 100;
+  .jd-top-bar-inner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+    .top-bar-l {
+      overflow: visible;
+      float: left;
+      .l-list {
+        height: 44px;
+        position: relative;
+        z-index: 2;
+        float: left;
+        li {
+          float: left;
+          position: relative;
+          a {
+            line-height: 44px;
+            display: inline-block;
+            padding: 0 8px;
+            color: #666666;
+            font-size: 14px;
+            &:hover {
+              color: #0064af;
+            }
+            span {
+              display: inline-block;
+              color: #999999;
+            }
+            .m-jd-online {
+              display: inline-block;
+              width: 12px;
+              height: 16px;
+              background: url('https://img.thea.cn/public/platform/thea/201906/qlp/images/css_sprites.png') -336px -80px;
+              vertical-align: middle;
+            }
+            .wb {
+              display: inline-block;
+              width: 18px;
+              height: 15px;
+              background: url('https://img.thea.cn/public/platform/thea/201906/qlp/images/css_sprites.png') -10px -273px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+    .register-login {
+      float: right;
+      .register-login-list {
+        li {
+          display: inline-block;
+          line-height: 44px;
+          color: #999999;
+          a {
+            color: #666666;
+            padding: 0 4px;
+            &:hover {
+              color: #0064af;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.jd-head {
+  height: 90px;
+  background-color: #fff;
+  .jd-head-l {
+    float: left;
+    padding-top: 17px;
+    .jd-logo {
+
+      @extend %in-b;
+      height: 55px;
+      &:after {
+        content: '';
+        @extend %in-b;
+        width: 1px;
+        height: 26px;
+        border-right: solid 1px #dddddd;
+        vertical-align: middle;
+      }
+      img {
+        width: auto;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+    .jd-jg-logo {
+      @extend %in-b;
+      a {
+        display: block;
+        max-height: 55px;
+        max-width: 120px;
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+    .jd-h1 {
+      @extend %in-b;
+      vertical-align: middle;
+      font-size: 22px;
+      color: #444;
+      margin-right: 20px;
+      margin-left: 14px;
+      font-weight: bold;
+    }
+    .jd-address {
+      @extend %in-b;
+      vertical-align: middle;
+      //width: 65px;
+      cursor: pointer;
+      position: relative;
+      padding-bottom: 3px;
+      z-index: 1000;
+      .jd-act {
+        border: solid 1px transparent;
+        text-align: center;
+        padding-left: 4px;
+        span {
+          @extend %in-b;
+          height: 100%;
+          //color: #444;
+          vertical-align: middle;
+          padding: 0 4px;
+          em {
+            color: #999999;
+          }
+        }
+        .jd-address-icon-1 {
+          @extend %in-b;
+          vertical-align: middle;
+          width: 12px;
+          height: 16px;
+          background: url('https://img.thea.cn/public/platform/thea/201906/qlp/images/css_sprites.png') -336px -116px;
+        }
+      }
+      .jd-city-box-wap {
+        display: none;
+      }
+      .jd-city-box {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 14px 20px;
+        min-width: 530px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        border: solid 1px #dadada;
+        .jd-select {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .jd-area {
+          margin: 10px 0 16px 0;
+        }
+        .jd-city {
+          display: none;
+          &.active {
+            display: block;
+          }
+          a {
+            margin: 0 5px;
+            padding: 0 5px;
+            border-radius: 2px;
+          }
+        }
+      }
+      .jd-area li {
+        @extend %in-b;
+        padding-bottom: 2px;
+        margin-right: 5px;
+        &.active {
+          color: #0064af;
+          border-bottom: 1px solid #0064af;
+        }
+        &:hover {
+          color: #0064af;
+          border-bottom: 1px solid #0064af;
+        }
+      }
+      .jd-city a {
+        @extend %in-b;
+        &.active {
+          color: #ffffff;
+          background: #0064af;
+        }
+        &:hover {
+          color: #ffffff;
+          background: #0064af;
+        }
+      }
+      &:hover,
+      &.active {
+        .jd-act {
+          background-color: #f5f5f5;
+          border-color: #e6e6e6;
+        }
+        .jd-city-box {
+          display: block;
+        }
+      }
+      &.active {
+        .jd-city-box-wap {
+          display: none;
+        }
+      }
+    }
+    .jd-jg {
+      @extend %in-b;
+      vertical-align: middle;
+      .jd-h1 {
+        font-size: 18px;
+        margin-right: 14px;
+        margin-left: 0;
+      }
+    }
+  }
+  .jd-head-r {
+    float: right;
+    padding-top: 28px;
+    .jd-search {
+      @extend %in-b;
+      vertical-align: middle;
+      height: 40px;
+      margin-right: 45px;
+      position: relative;
+      .search {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 16px;
+        height: 16px;
+        background: url('https://img.thea.cn/public/platform/thea/201906/qlp/images/css_sprites.png') -336px -10px;
+      }
+      input[type=text] {
+        float: left;
+        width: 250px;
+        height: 38px;
+        line-height: 40px;
+        border: solid 1px #e6e6e6;
+        padding-left: 20px;
+      }
+      input[type=submit] {
+        float: left;
+        width: 50px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #0064af;
+        border-radius: 2px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+    .jd-tel {
+      @extend %in-b;
+      vertical-align: middle;
+      i {
+        @extend %in-b;
+        width: 30px;
+        height: 30px;
+        background: url('https://img.thea.cn/public/platform/thea/201906/qlp/images/css_sprites.png') -182px -109px;
+        margin-right: 10px;
+      }
+      span {
+        @extend %in-b;
+        color: #0064af;
+        font-size: 26px;
+        line-height: 26px;
+        vertical-align: top;
+      }
+      .hot-line {
+        line-height: 14px;
+        text-align: center;
+        vertical-align: top;
+      }
+    }
+  }
+}
+.jd-nav {
+  background-color: #0064af;
+ 
+  height: 40px;
+  .jd-nav-menu {
+    position: relative;
+    li {
+      float: left;
+      height: 40px;
+      z-index: 100;
+      .jd-l-1 {
+        height: 100%;
+        font-size: 16px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        display: block;
+        padding: 0 36px;
+      }
+      .jd-l-2 {
+        width: 1200px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: none;
+        position: absolute;
+        left: 0;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.19);
+        border-radius: 0px 0px 4px 4px;
+        background: #ffffff;
+        z-index: 100;
+        .jd-l-con {
+          &:nth-last-child(1) {
+            .jd-lb-name {
+              border: none;
+            }
+          }
+        }
+        .jd-l-con {
+          @extend %clearfix;
+          .jd-lb-txt {
+            float: left;
+            line-height: 14px;
+            margin-top: 12px;
+            padding-left: 4px;
+            @extend %one;
+            color: #0064af;
+            border-left: 2px solid #0064af;
+          }
+          .jd-lb-name {
+            color: #999999;
+            a {
+              @extend .jd-btn-a;
+              margin-bottom: 10px;
+              padding: 0 pr(10px);
+            }
+          }
+        }
+      }
+      &:hover {
+        .jd-l-1 {
+          background-color: #01a4c1;
+        }
+        .jd-l-2 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.footer {
+  background: #ffffff;
+  margin-top: 0;
+  color: #999999;
+  padding: 20px 0;
+  text-align: center;
+  a{
+    @extend %in-b;
+    padding: 0 10px;
+  }
+}
+
+/* 内容部分 */
+.hx-jd{
+  .hzy-title{
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 42px;
+    color: #333333;
+    text-align: center;
+    span{
+      color: #174faf;
+    }
+  }
+  .hzy-btn{
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 56px;
+    line-height: 56px;
+    background-image: linear-gradient(90deg, 
+      #fd102a 0%, 
+      #fa7475 100%);
+    border-radius: 28px;
+    font-size: 24px;  
+    color: #ffffff;
+    text-align: center;
+  }
+  .hzy-banner{
+    width: 100%;
+    // height: 450px;
+    background: url(../images/banner_1.png) no-repeat center;
+    padding-top: 354px;
+    padding-bottom: 40px;
+    a{
+      display: block;
+      width: 320px;
+      height: 56px;
+      margin: 0 auto;
+    }
+  }
+  .hzy-strengths{
+    height: 1548px;
+    background: url(../images/bg_1.png) no-repeat center;
+    .win{
+      padding-top: 90px;
+      .win-cont{
+        padding-top: 70px;
+        padding-bottom: 80px;
+        @extend %clearfix;
+        .cont-item{
+          // width: 340px;
+          // height: 360px;
+          float: left;
+          background-color: #ffffff;
+          box-shadow: 1px 4px 20px 0px 
+            rgba(0, 0, 0, 0.05);
+          padding: 24px 30px;
+          margin-right: 40px;
+          &:last-child{
+            margin-right: 0;
+          }
+          .item-bg{
+            width: 280px;
+            height: 160px;
+            margin-bottom: 18px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .item-title{
+            font-size: 24px;
+            line-height: 40px;
+            color: #174faf;
+            text-align: center;
+            margin-bottom: 2px;
+          }
+          p{
+            width: 280px;
+            font-size: 16px;
+            line-height: 30px;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .hzy-program{
+    padding-top: 150px;
+    .hzy-title{
+      color: #fff;
+      span{
+        color: #ffe363;
+      }
+    }
+    .program-cont{
+      padding-top: 57px;
+      padding-bottom: 60px;
+      @extend %clearfix;
+      .cont-l{
+        float: left;
+        width: 460px;
+        padding-top: 54px;
+        .l-title{
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 40px;
+          color: #ffffff;
+        }
+        li{
+          font-size: 16px;
+          line-height: 40px;
+          color: #ffffff;
+          opacity: 0.8;
+          padding-left: 34px;
+          background: url(../images/icon_1.png) no-repeat left;
+        }
+      }
+      .cont-r{
+        float: right;
+        // width: 640px;
+        // height: 390px;
+        padding: 20px;
+        background-color: #575c8f;
+        box-shadow: 1px 4px 20px 0px 
+          rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        .r-detail{
+          width: 600px;
+          height: 350px;
+          padding: 20px 10px 20px 40px;
+          box-sizing: border-box;
+          background-color: rgba(255, 255, 255, 0.9);
+          box-shadow: 1px 4px 20px 0px 
+            rgba(0, 0, 0, 0.05);
+          .detail-title{
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 40px;
+            color: #174faf;
+          }
+          .detail-logo{
+            padding-top: 20px;
+            padding-bottom: 24px;
+            a{
+              @extend %in-b;
+              margin-right: 20px;
+            }
+          }
+          li{
+            font-size: 16px;
+            line-height: 36px;
+            color: #333333;
+            padding-left: 34px;
+            background: url(../images/icon_2.png) no-repeat left;
+            span{
+              font-weight: bold;
+              color: #fb4d40;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hzy-vip{
+    // height: 720px;
+    padding-top: 70px;
+    background: url(../images/bg_2.png) no-repeat center;
+    .vip-cont{
+      padding-left: 340px;
+      padding-top: 100px;
+      box-sizing: border-box;
+      @extend %clearfix;
+      .cont-item{
+        width: 360px;
+        height: 140px;
+        float: left;
+        background-color: #ffffff;
+        box-shadow: 1px 4px 18px 0px 
+          rgba(23, 79, 175, 0.06);
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-bottom: 24px; 
+        padding: 20px;
+        box-sizing: border-box;
+        .num{
+          @extend %in-b;
+          font-style: normal;
+          font-size: 60px;
+          font-weight: bold;
+          line-height: 60px;
+          color: #174faf;
+          opacity: 0.9;
+          vertical-align: middle;
+        }
+        p{
+          @extend %in-b;
+          width: 234px;
+          font-size: 18px;
+          line-height: 30px;
+          color: #333333;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .hzy-carefree{
+    background: url(../images/bg_3.png) no-repeat center top;
+    padding-top: 70px;
+    .subtitle{
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .carefree-cont{
+      @extend %clearfix;
+      margin-top: 70px;
+      height: 460px;
+      padding-top: 117px;
+      box-sizing: border-box;
+      background: url(../images/bg_3-1.png) no-repeat center;
+      margin-bottom: 76px;
+      position: relative;
+      .cont-item{
+        width: 245px;
+        float: left;
+        margin-left: 70px;
+        margin-right: 44px;
+        text-align: center;
+        .item-title{
+          font-size: 24px;
+          line-height: 40px;
+          color: #174faf;
+        }
+        p{
+          
+          font-size: 16px;
+          line-height: 24px;
+          color: #333333;
+        }
+        &:nth-of-type(4){
+          position: absolute;
+          bottom: 116px;
+        }
+        &:nth-of-type(5){
+          position: absolute;
+          bottom: 116px;
+          left: 358px;
+        }
+        &:nth-of-type(6){
+          position: absolute;
+          bottom: 116px;
+          right: 22px;
+        }
+      }
+    }
+  }
+}

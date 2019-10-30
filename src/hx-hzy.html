@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/modules-style.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <title>海峡网-合作页</title>
+</head>
+<body>
+  <!-- 页眉 -->
+  <div class="hxw-top-bar-wrap defaults_dataid" data-id="10-0-52-8235-0-194442-1-平面设计">
+    <div class="hxw-top-bar-inner clearfix">
+      <div class="hxw-nav clearfix">
+        <ul class="hxw-nav-list">
+          <li class="hxw-nav-list-first"><a href="http://www.hxnews.com/">海峡网</a></li>
+          <li><a href="http://www.hxnews.com/news/" target="_blank" title="新闻">新闻</a></li>
+          <li><a href="http://www.hxnews.com/news/fj/" target="_blank" title="福建">福建</a></li>
+          <li><a href="http://www.hxnews.com/news/fj/fz/" target="_blank" title="福州">福州</a></li>
+          <li><a href="http://www.hxnews.com/news/fj/mn/" target="_blank" title="闽南">闽南</a></li>
+          <li><a href="http://www.hxnews.com/news/la/" target="_blank" title="台湾">台湾</a></li>
+          <li><a href="http://www.hxnews.com/news/gn/" target="_blank" title="国内">国内</a></li>
+          <li><a href="http://www.hxnews.com/news/gj/" target="_blank" title="国际">国际</a></li>
+          <li><a href="http://dzb.hxnews.com/news/" target="_blank" title="电子报">电子报</a></li>
+          <li class="hxw-nav-list-last"><a href="#" class="hxw-more">更多<i></i></a>
+              <ul class="hxw-nav-others" style="display: none;">
+                  <li>
+                      <a href="http://www.hxnews.com/edu/jyzx/" title="教育" target="_blank">教育</a>
+                      <a href="http://house.hxnews.com/" title="房产" target="_blank">房产</a>
+                      <a href="http://auto.hxnews.com/" title="汽车" target="_blank">汽车</a>
+                      <a href="http://chuangye.hxnews.com/" title="创业" target="_blank">创业</a>
+                      <a href="http://home.hxnews.com/house/" title="家居" target="_blank">家居</a>
+                      <a href="http://www.hxnews.com/travel/" title="旅游" target="_blank">旅游</a>
+                  </li>
+                  <li>
+                      <a href="" title="出国" target="_blank">出国</a>
+                      <a href="http://love.hxnews.com/" title="婚恋" target="_blank">婚恋</a>
+                      <a title="婚嫁" target="_blank" href="http://www.hxnews.com/marry/">婚嫁</a>
+                      <a href="http://www.hxnews.com/baby/" title="亲子" target="_blank">亲子</a>
+                      <a href="http://www.hxnews.com/news/sp/" title="海峡视频" target="_blank">视频</a>
+                      <a href="http://www.hxnews.com/news/tp/" title="海峡图库" target="_blank">图片</a>
+                  </li>
+                  <li class="hxw-nav-others-last">
+                      <a href="http://www.hxnews.com/news/yl/" title="娱乐新闻" target="_blank">娱乐</a>
+                      <a href="http://www.hxnews.com/news/ty/" title="体育新闻" target="_blank">体育</a>
+                      <a href="http://chuangye.hxnews.com/hxcyhd/" target="_blank" title="IT科技">科技</a>
+                      <a href="http://www.hxnews.com/news/cjpd/" title="财经新闻" target="_blank">财经</a>
+                      <a href="http://www.hxnews.com/news/dmyx/dmzx/" title="动漫" target="_blank">动漫</a>
+                      <a href="http://www.hxnews.com/dz/" target="_blank" title="段子趣图">段子</a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <!--通行证组件start-->
+      <div class="hxw-client">
+        <div class="hxw-client-tl">
+          <a class="hxw-yd">海湃客户端<i></i></a>
+          <div class="hxw-dropdown" style="display: none;">
+              <img src="http://img.hxnews.com/w/templates/nhaidu/skin/images/pages/index_news_20160419/hxw_1.jpg">
+          </div>
+        </div>
+      </div>
+      <div id="SI_User" class="TAP14" style="position: relative;">
+        <div id="logout_status">
+            <div class="ac-rgst"> 
+              <a href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=register" class="head-register msg-link" target="_blank">注册</a> 
+            </div>
+            <div class="ac-login">
+              <div class="ac-login-cnt">
+                <a class="ac-login-cnt head-login" href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=login">
+                  <span class="log-links">登录</span>/
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="yh ac-login " id="login_status" style="display:none;">
+            <div class="head-login log-links" href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=login">
+                <span class="yh_wright">您好，<a target="_blank" href="http://apps.hxnews.com/?app=contribution&amp;controller=panel&amp;action=index" class="head-member"><em></em></a></span>&nbsp;|&nbsp;<a href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=logout" class="head-logout">退出</a>
+            </div>
+        </div>
+      </div>
+      <!--/通行证组件end-->
+    </div>
+  </div>
+  <!-- 头部 -->
+  <div class="hx-head">
+    <div class="wrap clearfix">
+      <div class="hx-head-l">
+        <div class="hx-logo">
+          <a href="/peixun/"><img src="https://img.thea.cn/public/platform/thea/201905/hx/images/hx-logo.png" alt=""></a>
+        </div>
+        <div class="hx-jg-logo">
+          <a href="/peixun/school_hz0571syedu/">
+            <img src="https://px.thea.cn/Public/Upload/1001971/Logo/1437387295.jpg" alt="" width="102" height="38">
+          </a>
+        </div>
+        <div class="hx-jg">
+          <h1 class="hx-h1">平面设计</h1>
+          <div class="hx-address">
+            <p class="hx-act"><i class="hx-address-icon-1 hx-icon"></i><span>杭州</span><i class="hx-address-icon-2 hx-icon"></i></p>
+            <div class="hx-city-box">
+            <p class="hx-select">请选择城市:</p>
+            <ul class="hx-area">
+                <li class="active">热门城市</li>
+                <li>华北地区</li>
+                <li>华南地区</li>
+                <li>华东地区</li>
+                <li>华中地区</li>
+                <li>中西部地区</li>
+            </ul>
+            <div class="hx-city active">
+                <a href="/peixun/city_sz/">深圳</a>
+                <a href="/peixun/city_gz/">广州</a>
+                <a href="/peixun/city_fs/">佛山</a>
+                <a href="/peixun/city_sh/">上海</a>
+                <a href="/peixun/city_bj/">北京</a>
+                <a href="/peixun/city_nj/">南京</a>
+                <a href="/peixun/city_hz/" class="active">杭州</a>
+                <a href="/peixun/city_jssz/">苏州</a>
+                <a href="/peixun/city_tj/">天津</a>
+            </div>
+            <div class="hx-city">
+                <a href="/peixun/city_xian/">西安</a>
+                <a href="/peixun/city_jinan/">济南</a>
+                <a href="/peixun/city_qingdao/">青岛</a>
+                <a href="/peixun/city_dalian/">大连</a>
+                <a href="/peixun/city_haerbin/">哈尔滨</a>
+                <a href="/peixun/city_changchun/">长春</a>
+                <a href="/peixun/city_shijiazhuang/">石家庄</a>
+            </div>
+            <div class="hx-city">
+                <a href="/peixun/city_nanning/">南宁</a>
+                <a href="/peixun/city_xiamen/">厦门</a>
+                <a href="/peixun/city_dg/">东莞</a>
+                <a href="/peixun/city_zh/">珠海</a>
+                <a href="/peixun/city_haikou/">海口</a>
+                <a href="/peixun/city_jiangmen/">江门</a>
+                <a href="/peixun/city_liuzhou/">柳州</a>
+            </div>
+            <div class="hx-city">
+                <a href="/peixun/city_ningbo/">宁波</a>
+                <a href="/peixun/city_wuxi/">无锡</a>
+                <a href="/peixun/city_changzhou/">常州</a>
+                <a href="/peixun/city_hefei/">合肥</a>
+                <a href="/peixun/city_jiaxing/">嘉兴</a>
+                <a href="/peixun/city_xuzhou/">徐州</a>
+                <a href="/peixun/city_yangzhou/">扬州</a>
+                <a href="/peixun/city_zhangzhou/">漳州</a>
+                <a href="/peixun/city_bengbu/">蚌埠</a>
+                <a href="/peixun/city_dongying/">东营</a>
+                <a href="/peixun/city_fuzhou1/">福州</a>
+            </div>
+            <div class="hx-city">
+                <a href="/peixun/city_changsha/">长沙</a>
+                <a href="/peixun/city_wuhan/">武汉</a>
+                <a href="/peixun/city_zhengzhou/">郑州</a>
+            </div>
+            <div class="hx-city">
+                <a href="/peixun/city_guiyang/">贵阳</a>
+                <a href="/peixun/city_chongqing/">重庆</a>
+                <a href="/peixun/city_chengdu/">成都</a>
+                <a href="/peixun/city_taiyuan/">太原</a>
+                <a href="/peixun/city_kunming/">昆明</a>
+            </div>
+            </div>
+            <div class="hx-city-box-wap">
+            <div class="hx-hot-city">
+              <p>热门城市</p>
+              <div class="hx-city hx-">
+                <a href="/peixun/city_sz/">深圳</a>
+                <a href="/peixun/city_gz/">广州</a>
+                <a href="/peixun/city_fs/">佛山</a>
+                <a href="/peixun/city_sh/">上海</a>
+                <a href="/peixun/city_bj/">北京</a>
+                <a href="/peixun/city_nj/">南京</a>
+                <a href="/peixun/city_hz/" class="active">杭州</a>
+                <a href="/peixun/city_jssz/">苏州</a>
+                <a href="/peixun/city_tj/">天津</a>
+              </div>
+            </div>
+            <div class="hx-city-card">
+              <p class="clearfix"><i class="hx-icon icon-triangle"></i>华北地区<i class="hx-icon icon-xl"></i></p>
+              <div class="hx-city">
+                <a href="/peixun/city_xian/">西安</a>
+                <a href="/peixun/city_jinan/">济南</a>
+                <a href="/peixun/city_qingdao/">青岛</a>
+                <a href="/peixun/city_dalian/">大连</a>
+                <a href="/peixun/city_haerbin/">哈尔滨</a>
+                <a href="/peixun/city_changchun/">长春</a>
+              </div>
+            </div>
+            <div class="hx-city-card">
+              <p><i class="hx-icon icon-triangle"></i>华南地区<i class="hx-icon icon-xl"></i></p>
+              <div class="hx-city">
+                <a href="/peixun/city_nanning/">南宁</a>
+                <a href="/peixun/city_xiamen/">厦门</a>
+                <a href="/peixun/city_dg/">东莞</a>
+                <a href="/peixun/city_zh/">珠海</a>
+                <a href="/peixun/city_haikou/">海口</a>
+              </div>
+            </div>
+            <div class="hx-city-card">
+              <p><i class="hx-icon icon-triangle"></i>华东地区<i class="hx-icon icon-xl"></i></p>
+              <div class="hx-city">
+                <a href="/peixun/city_ningbo/">宁波</a>
+                <a href="/peixun/city_wuxi/">无锡</a>
+                <a href="/peixun/city_changzhou/">常州</a>
+                <a href="/peixun/city_hefei/">合肥</a>
+                <a href="/peixun/city_jiaxing/">嘉兴</a>
+                <a href="/peixun/city_xuzhou/">徐州</a>
+                <a href="/peixun/city_yangzhou/">扬州</a>
+              </div>
+            </div>
+            <div class="hx-city-card">
+              <p><i class="hx-icon icon-triangle"></i>华中地区<i class="hx-icon icon-xl"></i></p>
+              <div class="hx-city">
+                  <a href="/peixun/city_changsha/">长沙</a>
+                  <a href="/peixun/city_wuhan/">武汉</a>
+                  <a href="/peixun/city_zhengzhou/">郑州</a>
+              </div>
+            </div>
+            <div class="hx-city-card">
+              <p><i class="hx-icon icon-triangle"></i>中西部地区地区<i class="hx-icon icon-xl"></i></p>
+              <div class="hx-city">
+                <a href="/peixun/city_guiyang/">贵阳</a>
+                <a href="/peixun/city_chongqing/">重庆</a>
+                <a href="/peixun/city_chengdu/">成都</a>
+                <a href="/peixun/city_taiyuan/">太原</a>
+                <a href="/peixun/city_kunming/">昆明</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hx-head-r">
+        <div class="hx-search t_search">
+          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;" target="_blank">
+            <input name="text_one" type="text" id="text_one" class="search_text text" value="" placeholder="请输入关键词">
+            <input type="submit" id="submit_one" name="submit_one" class="search_submit btn" value="搜索">
+          </form>
+        </div>
+        <div class="hx-tel">17706537281</div>
+      </div>
+    </div>
+  </div>
+  <!-- 导航 -->
+  <div class="hx-nav">
+    <div class="wrap">
+      <div class="hx-jg-class">
+        <p class="hx-jg-all"><span>全部分类</span></p>
+        <ul class="hx-nav-menu clearfix">
+          <li>
+                  <a class="hx-l-1"><span>中小学</span><i class="icon-l"></i></a>
+                  <div class="hx-l-2">
+                      <div class="hx-l-con clearfix">
+                              <p class="hx-lb-txt"><a href="/peixun/c_tuozhan/city_hz/">拓展训练营</a>：</p>
+                              <div class="hx-lb-name">
+                                  <a href="/peixun/xyuk/city_hz/">素质教育</a><a href="/peixun/xyin/city_hz/">夏令营</a>                                        </div>
+                          </div><div class="hx-l-con clearfix">
+                              <p class="hx-lb-txt"><a href="/peixun/c_zxx/city_hz/">中小学教育</a>：</p>
+                              <div class="hx-lb-name">
+                                  <a href="/peixun/sejqr/city_hz/">机器人</a><a href="/peixun/naoli/city_hz/">脑力训练</a><a href="/peixun/gx/city_hz/">国学</a>                                        </div>
+                          </div><div class="hx-l-con clearfix">
+                              <p class="hx-lb-txt"><a href="/peixun/c_fudao/city_hz/">中小学课外辅导</a>：</p>
+                              <div class="hx-lb-name">
+                                  <a href="/peixun/zhongkao/city_hz/">中考复读</a><a href="/peixun/xxxkfd/city_hz/">小学学科辅导</a><a href="/peixun/zxxkfd/city_hz/">中学学科辅导</a><a href="/peixun/gzxkfd/city_hz/">高中学科辅导</a><a href="/peixun/cyfd/city_hz/">初一</a><a href="/peixun/cefd/city_hz/">初二</a><a href="/peixun/csfd/city_hz/">初三</a><a href="/peixun/gyfd/city_hz/">高一</a><a href="/peixun/gefd/city_hz/">高二</a>                                        </div>
+                          </div><div class="hx-l-con clearfix">
+                              <p class="hx-lb-txt"><a href="/peixun/c_yezj/city_hz/">幼儿早期教育</a>：</p>
+                              <div class="hx-lb-name">
+                                  <a href="/peixun/xqjy/city_hz/">幼儿园</a><a href="/peixun/zaojiao/city_hz/">早教托班</a><a href="/peixun/jiyili/city_hz/">记忆力</a><a href="/peixun/qingshang/city_hz/">情商</a><a href="/peixun/qimeng/city_hz/">少儿艺术启蒙</a><a href="/peixun/xiju/city_hz/">戏剧英语早教</a>                                        </div>
+                          </div><div class="hx-l-con clearfix">
+                              <p class="hx-lb-txt"><a href="/peixun/c_yikao/city_hz/">高考艺考辅导</a>：</p>
+                              <div class="hx-lb-name">
+                                  <a href="/peixun/gkfd/city_hz/">高考复读</a><a href="/peixun/gaozhong/city_hz/">高中</a><a href="/peixun/gaokaox/city_hz/">高考</a><a href="/peixun/gaokao/city_hz/">高考辅导班</a><a href="/peixun/yikaowh/city_hz/">艺考文化课</a><a href="/peixun/ykzyk/city_hz/">艺考专业课</a>                                        </div>
+                          </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>文体艺术</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_shuhua/city_hz/">书画</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xmeis/city_hz/">绘画</a><a href="/peixun/xshuf/city_hz/">书法</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_music/city_hz/">音乐</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xgq/city_hz/">钢琴</a><a href="/peixun/cg/city_hz/">声乐</a><a href="/peixun/guzheng/city_hz/">古筝</a><a href="/peixun/guqin/city_hz/">古琴</a><a href="/peixun/erhu/city_hz/">二胡</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_dance/city_hz/">舞蹈</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xwd/city_hz/">舞蹈</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_qi/city_hz/">棋类</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/wq/city_hz/">围棋</a><a href="/peixun/xq/city_hz/">象棋</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_qiu/city_hz/">球类</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/lanqiu/city_hz/">篮球</a><a href="/peixun/zuqiu/city_hz/">足球</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_aihao/city_hz/">爱好</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xmoive/city_hz/">影视戏剧</a><a href="/peixun/jijian/city_hz/">击剑</a><a href="/peixun/semt/city_hz/">少儿模特</a><a href="/peixun/sekc/city_hz/">少儿口才</a><a href="/peixun/sebc/city_hz/">少儿编程</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>语言培训</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_english/city_hz/">英语</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/pets/city_hz/">公共英语</a><a href="/peixun/ky/city_hz/">英语口语</a><a href="/peixun/bec/city_hz/">商务英语</a><a href="/peixun/toefl/city_hz/">托福</a><a href="/peixun/yasi/city_hz/">雅思</a><a href="/peixun/xgn/city_hz/">新概念英语</a><a href="/peixun/sat/city_hz/">SAT</a><a href="/peixun/act/city_hz/">ACT</a><a href="/peixun/children/city_hz/">少儿英语</a><a href="/peixun/ap/city_hz/">AP</a><a href="/peixun/pte/city_hz/">PTE</a><a href="/peixun/al/city_hz/">A-level</a><a href="/peixun/ssat/city_hz/">SSAT</a><a href="/peixun/ib/city_hz/">IB</a><a href="/peixun/qtlxks/city_hz/">其他留学考试培训</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_xiaoyu/city_hz/">小语种</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/riyu/city_hz/">日语</a><a href="/peixun/hanyu/city_hz/">韩语</a><a href="/peixun/yiyu/city_hz/">意大利语</a><a href="/peixun/xiyu/city_hz/">西班牙语</a><a href="/peixun/deyu/city_hz/">德语</a><a href="/peixun/fayu/city_hz/">法语</a><a href="/peixun/xyz/city_hz/">其他小语种</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>IT</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_software/city_hz/">软件系统</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/net/city_hz/">网络工程师</a><a href="/peixun/soft/city_hz/">软件开发</a><a href="/peixun/rjcs/city_hz/">软件测试</a><a href="/peixun/webqd/city_hz/">web前端</a><a href="/peixun/jiqiren/city_hz/">机器人</a><a href="/peixun/dsj/city_hz/">大数据</a><a href="/peixun/rgzn/city_hz/">人工智能</a><a href="/peixun/azkf/city_hz/">安卓开发</a><a href="/peixun/ios/city_hz/">ios开发</a><a href="/peixun/python/city_hz/">Python开发</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_dongman/city_hz/">影视动漫</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/youx/city_hz/">游戏开发</a><a href="/peixun/dmh/city_hz/">动漫设计</a><a href="/peixun/yszz/city_hz/">影视制作</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_shejishi/city_hz/">设计师</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/pmsj/city_hz/">平面设计</a><a href="/peixun/web/city_hz/">网页设计</a><a href="/peixun/xss/city_hz/">室内设计</a><a href="/peixun/ui/city_hz/">UI设计</a><a href="/peixun/jxsj/city_hz/">机械设计</a><a href="/peixun/qtsj/city_hz/">其他设计类培训</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_marketing/city_hz/">电子营销</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xds/city_hz/">电子商务</a><a href="/peixun/wlyx/city_hz/">网络营销</a><a href="/peixun/cjds/city_hz/">跨境电商</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_itrz/city_hz/">IT认证</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/java/city_hz/">JAVA</a><a href="/peixun/php/city_hz/">PHP</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>职业技能</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_jiashi/city_hz/">驾驶</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/wurenji/city_hz/">无人机</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_canyin/city_hz/">中西餐饮</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xcyi/city_hz/">茶艺师</a><a href="/peixun/jn/city_hz/">厨师</a><a href="/peixun/xccy/city_hz/">小吃</a><a href="/peixun/xidian/city_hz/">西点烘焙</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_mrhz/city_hz/">美容化妆</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/mrmf/city_hz/">美容</a><a href="/peixun/xxsj/city_hz/">形象设计</a><a href="/peixun/zhenggu/city_hz/">整形美容</a><a href="/peixun/mj/city_hz/">美甲</a><a href="/peixun/wenxiu/city_hz/">纹绣</a><a href="/peixun/pifu/city_hz/">皮肤管理</a><a href="/peixun/huazhuang/city_hz/">化妆</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_clothing/city_hz/">服装穿戴</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xfzs/city_hz/">服装设计</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_zhuchi/city_hz/">播音主持</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/model/city_hz/">模特</a><a href="/peixun/kcpx/city_hz/">演讲口才</a><a href="/peixun/lypx/city_hz/">礼仪</a><a href="/peixun/zc/city_hz/">主持人</a><a href="/peixun/yanyi/city_hz/">演艺</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_shouyi/city_hz/">创业手艺</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/sheying/city_hz/">摄影</a><a href="/peixun/ch/city_hz/">插花</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>资格考试</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_kuaiji/city_hz/">会计</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/chujikj/city_hz/">会计师</a><a href="/peixun/xzk/city_hz/">注册会计师</a><a href="/peixun/xkjz/city_hz/">会计职称</a><a href="/peixun/xkjw/city_hz/">会计实操</a><a href="/peixun/chujikjx/city_hz/">初级会计师</a><a href="/peixun/zhongji/city_hz/">中级会计师</a><a href="/peixun/gpsc/city_hz/">股票实操</a><a href="/peixun/cjjjs/city_hz/">初级经济师</a><a href="/peixun/zjjjs/city_hz/">中级经济师</a><a href="/peixun/xjjs/city_hz/">经济师</a><a href="/peixun/jjswx/city_hz/">经济师网校</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_jinrong/city_hz/">金融</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xlc/city_hz/">理财规划师</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_yiyao/city_hz/">医药</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/yishifudao/city_hz/">执业医师辅导</a><a href="/peixun/yaoshifudao/city_hz/">执业药师辅导</a><a href="/peixun/xzy/city_hz/">执业医师</a><a href="/peixun/wshushi/city_hz/">护士</a><a href="/peixun/weishengfd/city_hz/">卫生资格辅导</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_building/city_hz/">建筑</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xjl/city_hz/">监理工程师</a><a href="/peixun/xjzs1/city_hz/">一级建造师</a><a href="/peixun/xzj/city_hz/">造价工程师</a><a href="/peixun/xyus/city_hz/">造价员</a><a href="/peixun/xag/city_hz/">安全工程师</a><a href="/peixun/xjzs2/city_hz/">二级建造师</a><a href="/peixun/xzx/city_hz/">咨询工程师</a><a href="/peixun/wdy/city_hz/">建筑九大员</a><a href="/peixun/xiaofang/city_hz/">消防工程师</a><a href="/peixun/qtjz/city_hz/">其他建筑类培训</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_gongzhi/city_hz/">国家公职</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/jiaoshi/city_hz/">教师资格</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_zhicheng/city_hz/">职称考证</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xrl/city_hz/">人力资源师</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_qtzy/city_hz/">其他职业资格</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xdy/city_hz/">导游资格证</a><a href="/peixun/shehui/city_hz/">社会工作者</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_mind/city_hz/">心理健康</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xxl/city_hz/">心理咨询师</a><a href="/peixun/xhyin/city_hz/">婚姻家庭指导师</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_jiankang/city_hz/">健康养生</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/jkgls/city_hz/">健康管理师</a><a href="/peixun/yuys/city_hz/">育婴师</a><a href="/peixun/crs/city_hz/">催乳师</a><a href="/peixun/xetuina/city_hz/">小儿推拿师</a><a href="/peixun/ysyj/city_hz/">养生瑜伽</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>企业管理</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_gaoceng/city_hz/">高层管理</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xqzl/city_hz/">战略管理</a><a href="/peixun/guoxue/city_hz/">国学智慧</a><a href="/peixun/glys/city_hz/">领导艺术</a><a href="/peixun/zckc/city_hz/">总裁研修班</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_zhongceng/city_hz/">中层管理</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xqcw/city_hz/">财务管理</a><a href="/peixun/xqyx/city_hz/">市场营销</a><a href="/peixun/xqrl/city_hz/">人力资源</a><a href="/peixun/cgwl/city_hz/">采购物流管理</a><a href="/peixun/xmgl/city_hz/">项目管理</a><a href="/peixun/scgl/city_hz/">生产管理</a><a href="/peixun/aqgl/city_hz/">安全管理</a><a href="/peixun/xsgl/city_hz/">销售管理</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_qtgl/city_hz/">其他管理培训</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/zcgh/city_hz/">职业素养</a><a href="/peixun/khfw/city_hz/">客户服务</a><a href="/peixun/zhgl/city_hz/">管理技能</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>学历文凭</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_education/city_hz/">成人学历</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xcgk/city_hz/">成人高考</a><a href="/peixun/xyc/city_hz/">远程教育</a><a href="/peixun/zikao/city_hz/">自考</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>国际教育</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_chuguo/city_hz/">出国留学</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xmg/city_hz/">美国留学</a><a href="/peixun/xjbd/city_hz/">加拿大留学</a><a href="/peixun/xxxn/city_hz/">新西兰留学</a><a href="/peixun/xrb/city_hz/">日本留学</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_youxue/city_hz/">海外游学</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/ygyxy/city_hz/">英国游学营</a><a href="/peixun/jndyxy/city_hz/">加拿大游学营</a><a href="/peixun/azyxy/city_hz/">澳洲游学营</a><a href="/peixun/ozyxy/city_hz/">欧洲游学营</a><a href="/peixun/rbyxy/city_hz/">日本游学营</a><a href="/peixun/qtyxy/city_hz/">其他游学营</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_gjxx/city_hz/">国际学校</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/xxjy/city_hz/">国际小学</a><a href="/peixun/xcz/city_hz/">国际初中</a><a href="/peixun/xgz/city_hz/">国际高中</a><a href="/peixun/gjyey/city_hz/">国际幼儿园</a><a href="/peixun/gjyuke/city_hz/">国际预科</a><a href="/peixun/gjxxrx/city_hz/">国际学校入学考试</a><a href="/peixun/lxzpj/city_hz/">留学作品集</a><a href="/peixun/gjxxqt/city_hz/">其他</a>                                        </div>
+                        </div>                            </div>
+            </li><li>
+                <a class="hx-l-1"><span>研修</span><i class="icon-l"></i></a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_pubmed/city_hz/">考研考博</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/mba/city_hz/">MBA</a><a href="/peixun/emba/city_hz/">EMBA</a><a href="/peixun/kyfd/city_hz/">考研</a><a href="/peixun/gwmba/city_hz/">国外MBA</a><a href="/peixun/zzbs/city_hz/">在职博士</a>                                        </div>
+                        </div><div class="hx-l-con clearfix">
+                            <p class="hx-lb-txt"><a href="/peixun/c_zongcai/city_hz/">总裁班</a>：</p>
+                            <div class="hx-lb-name">
+                                <a href="/peixun/zongcai/city_hz/">金融研修班</a><a href="/peixun/glyx/city_hz/">管理研修班</a><a href="/peixun/gxyx/city_hz/">国学研修班</a>                                        </div>
+                        </div>                            </div>
+            </li>
+        </ul>
+      </div>
+      <ul class="hx-nav-menu clearfix">
+        <li>
+          <a class="hx-l-1" href="/peixun/school_hz0571syedu/">首页</a>
+        </li>
+        <li class="cur">
+          <a class="hx-l-1" href="/peixun/pmsj/hz/">面授培训</a>
+        </li>
+        <li>
+          <a class="hx-l-1" href="/peixun/wenda/pmsj/">学员问答</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 内容部分 -->
+  <div class="hx-jd">
+    <div class="hzy-banner">
+      <a href=""></a>
+    </div>
+    <!-- 优势 -->
+    <div class="hzy-strengths">
+      <div class="win wrap">
+        <div class="hzy-title">
+          <span>三大优势</span>制胜
+        </div>
+        <div class="win-cont">
+          <div class="cont-item">
+            <div class="item-bg">
+              <img src="images/ys_1.png" alt="">
+            </div>
+            <div class="item-title">专业制胜</div>
+            <p>
+              独立的营销管理系统，专业的数据和学员数据分析，大力挖掘潜在学员，大幅度提高学校的学员名单。
+            </p>
+          </div>
+          <div class="cont-item">
+            <div class="item-bg">
+              <img src="images/ys_2.png" alt="">
+            </div>
+            <div class="item-title">团队制胜</div>
+            <p>
+              优秀的运营团队,从策划、设计到客服各司其职，组织架构完善，流程畅通确保了服务质量和目标销量的提高。
+            </p>
+          </div>
+          <div class="cont-item">
+            <div class="item-bg">
+              <img src="images/ys_3.png" alt="">
+            </div>
+            <div class="item-title">战略制胜</div>
+            <p>
+              根据品牌的战略计划制定战略方案，包括市场定位、产品方向和营诮策略，整体化的运营方针。
+            </p>
+          </div>
+        </div>
+        <a href="" class="hzy-btn">申请合作</a>
+      </div>
+      <!-- 方案 -->
+      <div class="hzy-program wrap">
+        <div class="hzy-title">
+          专业<span>互联网招生</span>方案，招生更靠谱
+        </div>
+        <div class="program-cont">
+          <div class="cont-l">
+            <div class="l-title">其他网站服务</div>
+            <ul>
+              <li>一个网站运营，势单力薄，品牌知名度低</li>
+              <li>网站流量低，转化率低</li>
+              <li>公司规模小，技术、资源有限</li>
+              <li>团队成员少，专业欠缺，</li>
+              <li>推广不到位获取名单数量少，质量低</li>
+              <li>不敢承诺业绩，招生效果无保障</li>
+            </ul>
+          </div>
+          <div class="cont-r">
+            <div class="r-detail">
+              <div class="detail-title">我们的会员服务</div>
+              <div class="detail-logo">
+                <a href="http://www.hxnews.com/peixun/" target="_blank">
+                  <img src="images/hx-logo.png" alt="">
+                </a>
+                <a href="http://www.jiaodong.net/study/" target="_blank">
+                  <img src="images/jdzx-logo.png" alt="">
+                </a>
+                <a href="http://www.peixunmatou.com/" target="_blank">
+                  <img src="images/pxmt-logo.png" alt="">
+                </a>
+              </div>
+              <ul>
+                <li>三大高权重教育平台联合运营，流量日超<span>100万</span></li>
+                <li>专业<span>推广团队</span>，自然排名与生成优化</li>
+                <li>专业<span>客服团队</span>，精准沟通筛选目标学员</li>
+                <li>全国<span>20+</span>分站排兵布阵，打通推广渠道，</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="" class="hzy-btn">了解更多</a>
+      </div>
+    </div>
+    <!-- vip -->
+    <div class="hzy-vip">
+      <div class="hzy-title">
+        四大会员<span>专享服务</span>
+      </div>
+      <div class="vip-cont wrap">
+        <div class="cont-item">
+          <i class="num">01</i>
+          <p>
+            免费为机构页面包装设计
+          </p>
+        </div>
+        <div class="cont-item">
+          <i class="num">02</i>
+          <p>
+            对机构主页的维护及后台流量名单的提升
+          </p>
+        </div>
+        <div class="cont-item">
+          <i class="num">03</i>
+          <p>
+            正式成为我们的会员，可免费为会员策划页面及课程推广
+          </p>
+        </div>
+        <div class="cont-item">
+          <i class="num">04</i>
+          <p>
+            正式成为我们的会员,及可享受我们一对一的服务顾问,24小时随时为您服务
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 无忧 -->
+    <div class="hzy-carefree">
+      <div class="hzy-title">
+        <span>6步</span>轻松合作，无忧招生
+        <div class="subtitle">欢迎前往公司洽谈，亲自考核</div>
+      </div>
+      <div class="carefree-cont wrap">
+        <div class="cont-item">
+          <span class="item-title">申请入驻</span>
+          <p>
+            提供营业执照扫描件、公司名称、官网、主推项目、合作区域、收费标准等信息
+          </p>
+        </div>
+        <div class="cont-item">
+          <span class="item-title">合作洽谈</span>
+          <p>
+            确认合作意向与提成返佣比例
+          </p>
+        </div>
+        <div class="cont-item">
+          <span class="item-title">签订合同</span>
+          <p>
+            确认合同条款，并签署合作协议
+          </p>
+        </div>
+        <div class="cont-item">
+          <span class="item-title">推送学员</span>
+          <p>
+            陆续推送学员名单
+          </p>
+        </div>
+        <div class="cont-item">
+          <span class="item-title">制作网页</span>
+          <p>
+            提供推广所需图文资料
+          </p>
+        </div>
+        <div class="cont-item">
+          <span class="item-title">人员对接</span>
+          <p>
+            填写对接信息表
+          </p>
+        </div>
+      </div>
+      <a href="" class="hzy-btn">了解更多</a>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p class="links"><a href="/peixun/course/" target="_blank">面授</a>| <a href="/peixun/wangxiao/" target="_blank">网课</a>| <a href="/peixun/news/" target="_blank">资讯</a>| <a href="/peixun/school/" target="_blank">机构</a>| <a href="/peixun/sitemap.html" target="_blank">网站地图</a></p>
+    <p>闽ICP备15008128号-2 闽互联网新闻信息服务备案编号：20070802号</p>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
